@@ -6,12 +6,16 @@ using namespace std;
 
 
 int main()
-{
+{	/*
 	char initial = 'P';
 	char* pInitial = &initial;
-	cout << "Memory address for initial P: " << pInitial << endl;
-	//cout << "Memory address for initial P: " << static_cast <void *>(pInitial) << endl;
-	/*
+	cout << "Memory address for initial P: " << (void *)pInitial << endl;
+	
+	cout << "Memory address for initial P: " << static_cast <void *>(pInitial) << endl;
+	//both work to print address of the single character
+	*/
+	//character pointer is pointing to the first character 
+	//character pointer can be used to point to a string literal
 	const char* pans1{ "Absolutely yes" };
 	const char* pans2{ "Absolutely no" };
 	const char* pans3{ "The oracle is out, please try again later" };
@@ -55,7 +59,7 @@ int main()
 	default:
 		cout << "Sorry, you didn't choose a number between 1 and 8." << endl;
 	}
-	*/
+	
 	return 0;
 }
 
